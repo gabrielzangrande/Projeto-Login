@@ -29,13 +29,14 @@ main {
     width: 100vw;
 }
 
+/* CAIXA DE LOGIN */
 #login {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    background-color: rgb(219, 219, 219);
+    background-color: rgba(219, 219, 219, 0.300);
     width: 300px;
     height: 580px;
     border-radius: 20px;
@@ -48,7 +49,7 @@ main {
 
 .imagem {
     display: block;
-    background: #5f2c82 url(../imagens/loginbuild.jpg) no-repeat;
+    background: #602c823b url(../imagens/loginbuild.jpg) no-repeat;
     height: 220px;
     background-size: cover;
     background-position: center top;
@@ -67,7 +68,38 @@ main {
 }
 
 .formulario_p {
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+/* ÍCONE LOGIN */
+#loginclient {
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+/*  ÍCONE SENHA */
+#senhaclient{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo {
+    margin-bottom: 5px;
+}
+
+/* CAIXAS DE LOGIN E SENHA */
+div.campo > input {
+    background-color: rgb(235, 235, 235);
     font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-12px);
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .campo {
@@ -94,6 +126,10 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.botao_submit:hover {
+    background-color: #3e8684;
 }
 
 .botao_esquecisenha {
